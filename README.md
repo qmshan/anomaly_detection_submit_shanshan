@@ -10,6 +10,15 @@ This program has been developed and tested based on Python 2.7.10 under GCC 4.2.
  
 In order to run it, simply pull the whole folder into local machine and launch with run.sh script.  
 
+Dependency library includes the following, apply "pip install" when necessary:
+sys
+enum
+sets
+Queue
+time
+heapq
+math
+
 
 ## Argument list
 

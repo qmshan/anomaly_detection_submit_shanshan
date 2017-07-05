@@ -26,10 +26,10 @@ As above image shows, this program is designed to follow what state-of-art data 
  
 When program runs, log stream firstly passes through service parser and is translated into internal message log_item. After that, log_item is passed to Social Network Service and Purchase Analysis Service to conduct friendship and purchase update/analysis services. Database User_db is exposed for both Social Network Service and Purchase Analyze Service R/W. Database plays the role of maintaining all friendship, social circle (friends’ friendship based on given degree) and purchase record of all users. 
  
-#3Highlights on Social Network Service
+## Highlights on Social Network Service 
 I applied Breadth-first-search (BFS) to update the Nth degree social network when friendship got updated (befriend or unfriend). Suppose befriend/unfriend happens between A and B,  BFS will be applied on A, B and every user of their Nth social network.
  
-##Highlights on Purchase Analysis Service
+## Highlights on Purchase Analyze Service
 In order to decide if current purchase made by user A is anomaly, I have to pull recent K purchases from A’s Nth social network. Similar as TopK problem, a heap was used to optimize the time complexity as K*O(M), where K is total purchases I want to use for analyze and M is total users in A’s Nth social network.   
 
 ## Credits

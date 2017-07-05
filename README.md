@@ -13,12 +13,19 @@ In order to run it, simply pull the whole folder into local machine and launch w
 Dependency library includes the following, apply "pip install" when necessary:
 
 sys
+
 enum
+
 sets
+
 Queue
+
 time
+
 heapq
+
 math
+
 
 
 ## Argument list

@@ -20,7 +20,7 @@ python ./src/process_log.py <input_batch_log.txt> <input_stream_log.txt> <output
 
 
 ## Design
-<img src="./images/design.png" width="150">
+<img src="./images/design.png" width="300">
 
 As above image shows, this program is designed to follow what state-of-art data pipeline platform does. Main components includes three services - parser, Social Network Service and Purchase analyze service, and one “database” as Use_db. 
  
